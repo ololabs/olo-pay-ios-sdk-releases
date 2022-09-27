@@ -1,0 +1,23 @@
+// Copyright © 2022 Olo Inc. All rights reserved.
+// This software is made available under the Olo Pay SDK License (See LICENSE.md file)
+//
+//  Dev.xcconfig
+//  OloPaySDK
+//
+//  Created by Kyle Szklenski on 7/27/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+COMPLETE_OLO_PAY_PAYMENT = 
+APPLE_PAY_BILLING_SCHEME_ID = 
+BASE_API_URL = 
+API_KEY = 
+RESTAURANT_ID = 
+PRODUCT_ID = 
+PRODUCT_QTY = 
+FRESH_SETUP = false
+MERCHANT_ID = 
+COMPANY_LABEL = 
+USER_EMAIL = 
