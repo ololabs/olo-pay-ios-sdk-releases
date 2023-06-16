@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OloPayAPIProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/OloPayAPIProtocol" class="dashAnchor"></a>
+    <a title="OloPayAPIProtocol Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Olo Pay SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">OloPaySDK Reference</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        OloPayAPIProtocol Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../changelog.html">Changelog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../setup---carthage.html">Setup - Carthage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../setup---cocoapods.html">Setup - CocoaPods</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../setup---manual.html">Setup - Manual</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/OPApplePayContext.html">OPApplePayContext</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPError.html">OPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@OloPaySDK@objc(cs)OPMetadataGenerator">OPMetadataGenerator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPPaymentCardDetailsForm.html">OPPaymentCardDetailsForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPPaymentCardDetailsView.html">OPPaymentCardDetailsView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPPaymentMethod.html">OPPaymentMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@OloPaySDK@objc(cs)OPPaymentMethodParams">OPPaymentMethodParams</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPSdkWrapperInfo.html">OPSdkWrapperInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPSetupParameters.html">OPSetupParameters</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPStrings.html">OPStrings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OloPayAPI.html">OloPayAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OloPayApiInitializer.html">OloPayApiInitializer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/OPApplePayContextError.html">OPApplePayContextError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardBrand.html">OPCardBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardErrorType.html">OPCardErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardField.html">OPCardField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardFormStyle.html">OPCardFormStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPEnvironment.html">OPEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPErrorType.html">OPErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPPaymentMethodSource.html">OPPaymentMethodSource</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPPaymentStatus.html">OPPaymentStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPSdkWrapperBuildType.html">OPSdkWrapperBuildType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPSdkWrapperPlatform.html">OPSdkWrapperPlatform</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/OPApplePayContextDelegate.html">OPApplePayContextDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPApplePayContextProtocol.html">OPApplePayContextProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentCardDetailsFormDelegate.html">OPPaymentCardDetailsFormDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentCardDetailsViewDelegate.html">OPPaymentCardDetailsViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@OloPaySDK@objc(pl)OPPaymentMethodParamsProtocol">OPPaymentMethodParamsProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentMethodProtocol.html">OPPaymentMethodProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OloPayAPIProtocol.html">OloPayAPIProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OloPayApiInitializerProtocol.html">OloPayApiInitializerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK07OPAppleB15CompletionBlocka">OPApplePayCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK21OPCardBrandImageBlocka">OPCardBrandImageBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK23OPCardErrorMessageBlocka">OPCardErrorMessageBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK30OPPaymentMethodCompletionBlocka">OPPaymentMethodCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK11OPVoidBlocka">OPVoidBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>OloPayAPIProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">OloPayAPIProtocol</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Protocol for mocking/testing purposes. See <code><a href="../Classes/OloPayAPI.html">OloPayAPI</a></code> for documentation</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)createPaymentMethodWithPaymentForm:completion:"></a>
+                    <a name="//apple_ref/swift/Method/createPaymentMethod(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)createPaymentMethodWithPaymentForm:completion:">createPaymentMethod(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See <code><a href="../Classes/OloPayAPI.html#/c:@M@OloPaySDK@objc(cs)OloPayAPI(im)createPaymentMethodWithPaymentForm:completion:">OloPayAPI.createPaymentMethod(...)</a></code> for documentation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(swift, deprecated: 1.0, message: "Deprecated in Olo Pay SDK v1.0.2: Use createPaymentMethod(with: OPPaymentMethodParams, completion: OPPaymentMethodCompletionBlock﹚ instead.")</span>
+<span class="kd">@objc(createPaymentMethodWithPaymentForm:completion:)</span>
+<span class="kd">func</span> <span class="nf">createPaymentMethod</span><span class="p">(</span><span class="n">with</span> <span class="nv">paymentForm</span><span class="p">:</span> <span class="kt"><a href="../Classes/OPPaymentCardDetailsForm.html">OPPaymentCardDetailsForm</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:9OloPaySDK30OPPaymentMethodCompletionBlocka">OPPaymentMethodCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)createPaymentMethodWithPaymentControl:completion:"></a>
+                    <a name="//apple_ref/swift/Method/createPaymentMethod(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)createPaymentMethodWithPaymentControl:completion:">createPaymentMethod(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See <code><a href="../Classes/OloPayAPI.html#/c:@M@OloPaySDK@objc(cs)OloPayAPI(im)createPaymentMethodWithPaymentForm:completion:">OloPayAPI.createPaymentMethod(...)</a></code> for documentation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(swift, deprecated: 1.0, message: "Deprecated in Olo Pay SDK v1.0.2: Use createPaymentMethod(with: OPPaymentMethodParams, completion: OPPaymentMethodCompletionBlock﹚ instead.")</span>
+<span class="kd">@objc(createPaymentMethodWithPaymentControl:completion:)</span>
+<span class="kd">func</span> <span class="nf">createPaymentMethod</span><span class="p">(</span><span class="n">with</span> <span class="nv">paymentControl</span><span class="p">:</span> <span class="kt"><a href="../Classes/OPPaymentCardDetailsView.html">OPPaymentCardDetailsView</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:9OloPaySDK30OPPaymentMethodCompletionBlocka">OPPaymentMethodCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)createPaymentMethodWithPaymentMethodParams:completion:"></a>
+                    <a name="//apple_ref/swift/Method/createPaymentMethod(with:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)createPaymentMethodWithPaymentMethodParams:completion:">createPaymentMethod(with:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See <code><a href="../Classes/OloPayAPI.html#/c:@M@OloPaySDK@objc(cs)OloPayAPI(im)createPaymentMethodWithPaymentForm:completion:">OloPayAPI.createPaymentMethod(...)</a></code> for documentation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(swift, introduced: 1.0, message: "Introduced in Olo Pay SDK v1.0.2")</span>
+<span class="kd">@objc(createPaymentMethodWithPaymentMethodParams:completion:)</span>
+<span class="kd">func</span> <span class="nf">createPaymentMethod</span><span class="p">(</span><span class="n">with</span> <span class="nv">params</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/c:@M@OloPaySDK@objc(pl)OPPaymentMethodParamsProtocol">OPPaymentMethodParamsProtocol</a></span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:9OloPaySDK30OPPaymentMethodCompletionBlocka">OPPaymentMethodCompletionBlock</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)deviceSupportsApplePay"></a>
+                    <a name="//apple_ref/swift/Method/deviceSupportsApplePay()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)deviceSupportsApplePay">deviceSupportsApplePay()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See <code><a href="../Classes/OloPayAPI.html#/c:@M@OloPaySDK@objc(cs)OloPayAPI(im)deviceSupportsApplePay">OloPayAPI.deviceSupportsApplePay()</a></code> for documentation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">deviceSupportsApplePay</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)createPaymentRequestForAmount:inCountry:withCurrency:error:"></a>
+                    <a name="//apple_ref/swift/Method/createPaymentRequest(forAmount:inCountry:withCurrency:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(pl)OloPayAPIProtocol(im)createPaymentRequestForAmount:inCountry:withCurrency:error:">createPaymentRequest(forAmount:<wbr>inCountry:<wbr>withCurrency:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>See <code><a href="../Classes/OloPayAPI.html#/c:@M@OloPaySDK@objc(cs)OloPayAPI(im)createPaymentRequestForAmount:inCountry:withCurrency:error:">OloPayAPI.createPaymentRequest(...)</a></code> for documentation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">func</span> <span class="nf">createPaymentRequest</span><span class="p">(</span><span class="n">forAmount</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">NSDecimalNumber</span><span class="p">,</span> <span class="n">inCountry</span> <span class="nv">country</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withCurrency</span> <span class="nv">currency</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">PKPaymentRequest</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2023 <a class="link" href="https://github.com/ololabs/olo-pay-ios-sdk-releases" target="_blank" rel="external noopener">Olo, Inc.</a>. All rights reserved. (Last updated: 2023-06-16)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
