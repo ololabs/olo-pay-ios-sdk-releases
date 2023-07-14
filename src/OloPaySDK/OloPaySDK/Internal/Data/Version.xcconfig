@@ -1,0 +1,12 @@
+//
+//  Version.xcconfig
+//  OloPaySDK
+//
+//  Created by Richard Dowdy on 6/5/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//THIS MUST BE UPDATED EVERY RELEASE FOR METADATA TO WORK PROPERLY
+SDK_BUILD_VERSION = 2.1.6

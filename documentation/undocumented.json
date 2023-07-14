@@ -1,0 +1,131 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/API/OloPayAPI.swift",
+      "line": 181,
+      "symbol": "OloPayAPI.sdkWrapperInfo",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperBuildType.swift",
+      "line": 10,
+      "symbol": "OPSdkWrapperBuildType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperBuildType.swift",
+      "line": 11,
+      "symbol": "OPSdkWrapperBuildType.internalBuild",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperBuildType.swift",
+      "line": 12,
+      "symbol": "OPSdkWrapperBuildType.publicBuild",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperInfo.swift",
+      "line": 10,
+      "symbol": "OPSdkWrapperInfo",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperInfo.swift",
+      "line": 17,
+      "symbol": "OPSdkWrapperInfo.init(withMajorVersion:withMinorVersion:withBuildVersion:withSdkBuildType:withSdkPlatform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperInfo.swift",
+      "line": 25,
+      "symbol": "OPSdkWrapperInfo.version",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperInfo.swift",
+      "line": 29,
+      "symbol": "OPSdkWrapperInfo.buildType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperInfo.swift",
+      "line": 33,
+      "symbol": "OPSdkWrapperInfo.platform",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperPlatform.swift",
+      "line": 10,
+      "symbol": "OPSdkWrapperPlatform",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperPlatform.swift",
+      "line": 11,
+      "symbol": "OPSdkWrapperPlatform.reactNative",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSdkWrapperPlatform.swift",
+      "line": 12,
+      "symbol": "OPSdkWrapperPlatform.capacitor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSetupParameters.swift",
+      "line": 27,
+      "symbol": "OPSetupParameters.environment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Internal/Data/OPMetadataGenerator.swift",
+      "line": 11,
+      "symbol": "OPMetadataGenerator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Internal/Data/OPPaymentMethodSource.swift",
+      "line": 10,
+      "symbol": "OPPaymentMethodSource",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Internal/Data/OPPaymentMethodSource.swift",
+      "line": 12,
+      "symbol": "OPPaymentMethodSource.singleLineInput",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Internal/Data/OPPaymentMethodSource.swift",
+      "line": 13,
+      "symbol": "OPPaymentMethodSource.formInput",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Internal/Data/OPPaymentMethodSource.swift",
+      "line": 14,
+      "symbol": "OPPaymentMethodSource.applePay",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk"
+}
