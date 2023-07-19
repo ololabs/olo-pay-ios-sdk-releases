@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>SDK Build Type</key>
-	<string>Internal</string>
+	<string>Public</string>
 	<key>SDK Build Version</key>
 	<string>3.0.0</string>
 </dict>
