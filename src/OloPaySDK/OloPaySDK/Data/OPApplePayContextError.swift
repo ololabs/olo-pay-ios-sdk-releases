@@ -12,8 +12,12 @@ import Stripe
 
 /// An enum representing ApplePay specific errors
 @objc public enum OPApplePayContextError : Int, Error {
-    /// The merchant id was not set via `OloPayApiInitializer.setup(...)`
+    /// The merchant id is missing
     case missingMerchantId
-    /// The company label was not set via `OloPayApiInitializer.setup(...)`
+    /// The company label is missing
     case missingCompanyLabel
+    /// The merchant id is empty
+    case emptyMerchantId
+    /// The company label is empty
+    case emptyCompanyLabel
 }

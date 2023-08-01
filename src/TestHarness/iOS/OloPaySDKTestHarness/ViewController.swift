@@ -264,14 +264,18 @@ class ViewController: UIViewController, OPApplePayContextDelegate, OPPaymentCard
             // This can be mocked for testing purposes
             _applePayContext = OPApplePayContext(paymentRequest: pkPaymentRequest, delegate: self, basketId: basketId)
             
-            _applePayContext?.presentApplePay() {
+            try _applePayContext?.presentApplePay() {
                 self.log("Apple Pay Sheet Presented", appendNewLine: false)
                 self.log("Payment Request:\n\(String(describing: pkPaymentRequest))")
             }
         } catch OPApplePayContextError.missingMerchantId {
             self.log("Error: Missing merchant ID")
+        } catch OPApplePayContextError.emptyMerchantId {
+            self.log("Error: Empty merchant ID")
         } catch OPApplePayContextError.missingCompanyLabel {
             self.log("Error: Missing Company Label")
+        } catch OPApplePayContextError.emptyCompanyLabel {
+            self.log("Error: Empty Company Label")
         } catch {
             self.log("Unspecified error")
         }

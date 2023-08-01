@@ -38,7 +38,10 @@ import PassKit
     @objc var basketId: String? { get set }
     
     /// See `OPApplePayContext.presentApplePay(...)` for documentation
-    @objc func presentApplePay(completion: OPVoidBlock?)
+    @objc func presentApplePay(completion: OPVoidBlock?) throws
+
+    /// See `OPApplePayContext.presentApplePay(...)` for documentation
+    @objc func presentApplePay(merchantId: String, companyLabel: String, completion: OPVoidBlock?) throws
 }
 
 /// A helper class that implements and simplifies ApplePay.
@@ -96,8 +99,8 @@ import PassKit
 ///     }
 /// }
 /// ```
-@objc public class OPApplePayContext : NSObject, OloApplePayContextDelegateInternal, OPApplePayContextProtocol {
-    var _applePayContext: OPApplePayContextInternal?
+@objc public class OPApplePayContext : NSObject, OloApplePayLauncherDelegate, OPApplePayContextProtocol {
+    var _applePayLauncher: OPApplePayLauncher?
     var _delegate: OPApplePayContextDelegate?
     var _applePayPresented: Bool
     
@@ -120,40 +123,79 @@ import PassKit
         self.basketId = basketId
         super.init()
         
-        _applePayContext = OPApplePayContextInternal(paymentRequest: paymentRequest, delegate: self)
-        if _applePayContext == nil {
+        _applePayLauncher = OPApplePayLauncher(paymentRequest: paymentRequest, delegate: self)
+        if (_applePayLauncher == nil) {
             return nil
         }
     }
     
-    /// Presents the Apple Pay sheet from the key window, starting the payment process. A new instance of `OPApplePayContext` should be created every time
-    /// ApplePay is presented
+    /// Presents the Apple Pay sheet from the key window (using the merchant id and company label set in `OloPayAPI.setup(...)`) and starts the payment process.
     ///
     /// - Important: This method can only be called once per `OPApplePayContext` instance. Subsequent calls to this method will result in a no-op
     ///
     /// - Parameters:
     ///   - completion: Called after the Apple Pay sheet is visible to the user
-    @objc public func presentApplePay(completion: OPVoidBlock? = nil) {
+    ///   
+    /// - Throws: Throws `OPApplePayContextError.missingMerchantId`, `OPApplePayContextError.emptyMerchantId`,
+    ///           `OPApplePayContextError.missingCompanyLabel`, or `OPApplePayContextError.emptyCompanyLabel`
+    @objc public func presentApplePay(completion: OPVoidBlock? = nil) throws {
         guard !_applePayPresented else {
             return
         }
 
-        _applePayPresented = true
-        _applePayContext?.presentApplePay(completion: completion)
+        guard let merchantId = OPApplePayContext.merchantId else {
+            print("OPApplePayContext: merchantId must be set before calling createPaymentRequest()")
+            throw OPApplePayContextError.missingMerchantId
+        }
+
+        guard let companyLabel = OPApplePayContext.companyLabel else {
+            print("OPApplePayContext: companyLabel must be set before calling createPaymentRequest()")
+            throw OPApplePayContextError.missingCompanyLabel
+        }
+
+        try presentApplePay(merchantId: merchantId, companyLabel: companyLabel, completion: completion)
     }
     
-    func applePayContext(_ context: OPApplePayContextInternal, didCreatePaymentMethod paymentMethod: STPPaymentMethod, paymentInformation: PKPayment, completion: @escaping OPApplePayCompletionBlock) {
-        let oloPaymentMethod = OPPaymentMethod(paymentMethod: paymentMethod)
-        let result = self._delegate?.applePaymentMethodCreated(self, didCreatePaymentMethod: oloPaymentMethod)
+    /// Presents the Apple Pay sheet from the key window and starts the payment process.
+    ///
+    /// - Important: This method can only be called once per `OPApplePayContext` instance. Subsequent calls to this method will result in a no-op
+    ///
+    /// - Parameters:
+    ///   - merchantId: The merchant id to be used for this Apple Pay transaction. This overrides the value set in `OloPayAPI.setup(...)`
+    ///   - companyLabel: The company label to be used for this Apple Pay transaction. This overrides the value set in `OloPayAPI.setup(...)`
+    ///   - completion: Called after the Apple Pay sheet is visible to the user
+    ///
+    /// - Throws: Throws `OPApplePayContextError.emptyMerchantId` or `OPApplePayContextError.emptyCompanyLabel`
+    @objc public func presentApplePay(merchantId: String, companyLabel: String, completion: OPVoidBlock? = nil) throws {
+        guard !_applePayPresented else {
+            return
+        }
+
+        if merchantId.isEmpty {
+            print("OPApplePayContext: merchantId cannot be empty")
+            throw OPApplePayContextError.emptyMerchantId
+        }
+
+        if companyLabel.isEmpty {
+            print("OPApplePayContext: companyLabel cannot be empty")
+            throw OPApplePayContextError.emptyCompanyLabel
+        }
+
+        _applePayPresented = true
+        _applePayLauncher?.presentApplePay(merchantId: merchantId, companyLabel: companyLabel, completion: completion)
+    }
+
+    func paymentMethodCreated(_ launcher: OPApplePayLauncher, _ paymentMethod: OPPaymentMethod, _ paymentInfo: PKPayment, completion: @escaping OPApplePayCompletionBlock) {
+        let result = self._delegate?.applePaymentMethodCreated(self, didCreatePaymentMethod: paymentMethod)
         completion(result)
     }
-    
-    func applePayContext(_ context: OPApplePayContextInternal, didCompleteWith status: STPPaymentStatus, error: Error?) {
+
+    func applePayCompleted(_ launcher: OPApplePayLauncher, _ status: OPPaymentStatus, error: Error?) {
         guard let paymentCompleted = self._delegate?.applePaymentCompleted else {
             return
         }
         
         let wrappedError = OPError.wrapIfNeeded(from: error as NSError?)
-        paymentCompleted(self, OPPaymentStatus.convert(from: status), wrappedError)
+        paymentCompleted(self, status, wrappedError)
     }
 }

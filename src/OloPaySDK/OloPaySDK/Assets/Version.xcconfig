@@ -1,3 +1,5 @@
+// Copyright © 2022 Olo Inc. All rights reserved.
+// This software is made available under the Olo Pay SDK License (See LICENSE.md file)
 //
 //  Version.xcconfig
 //  OloPaySDK
@@ -9,4 +11,4 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 //THIS MUST BE UPDATED EVERY RELEASE FOR METADATA TO WORK PROPERLY
-SDK_BUILD_VERSION = 2.1.6
+SDK_BUILD_VERSION = 3.0.0

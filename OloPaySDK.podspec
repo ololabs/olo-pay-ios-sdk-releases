@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "OloPaySDK"
-  spec.version      = "2.1.6"
+  spec.version      = "3.0.0"
   spec.summary      = "A CocoaPods library for the Olo Pay SDK written in Swift"
   spec.description  = <<-DESC
   Olo Pay is an E-commerce payment solution designed to help restaurants grow, protect, and support their digital ordering and delivery business. Olo Pay is specifically designed for digital restaurant ordering to address the challenges and concerns that weʼve heard from thousands of merchants.
@@ -18,4 +18,5 @@ Pod::Spec.new do |spec|
   spec.source_files  = "**/src/OloPaySDK/OloPaySDK/**/*.{h,m,swift}"
   spec.public_header_files = "**/src/OloPaySDK/OloPaySDK/**/*.h"
   spec.dependency "Stripe", "23.9.0"
+  spec.resource_bundles = {"OloPaySDK" => [ "**/src/OloPaySDK/OloPaySDK/Assets/**/SdkInfo.plist" ]}
 end

@@ -1,3 +1,5 @@
+// Copyright © 2022 Olo Inc. All rights reserved.
+// This software is made available under the Olo Pay SDK License (See LICENSE.md file)
 //
 //  OPMetadataStrings.swift
 //  OloPaySDK
@@ -24,7 +26,6 @@ class OPMetadataStrings: NSObject {
     
     // THESE KEYS ONLY EXIST IF THE SOURCE IS APPLE PAY
     public static let digitalWalletCompanyLabelKey = "DigitalWalletCompanyLabel"
-    public static let applePayCountryCodeKey = "ApplePayCountryCode"
     public static let applePayMerchantIdKey = "ApplePayMerchantId"
     
     // NOT A FIELD - A STRING FOR THE PLATFORM 

@@ -23,15 +23,15 @@
 		1B17E5982A28FDB000CE2107 /* OPSdkWrapperBuildType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17E5972A28FDB000CE2107 /* OPSdkWrapperBuildType.swift */; };
 		1B17E59A2A28FDBD00CE2107 /* OPSdkWrapperPlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17E5992A28FDBD00CE2107 /* OPSdkWrapperPlatform.swift */; };
 		1B17E59F2A2AAAD600CE2107 /* MetadataGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17E58F2A269D9700CE2107 /* MetadataGeneratorTests.swift */; };
-		1B17E5A62A2E589500CE2107 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B17E5A52A2E589500CE2107 /* Debug.xcconfig */; };
-		1B17E5A72A2E589500CE2107 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B17E5A52A2E589500CE2107 /* Debug.xcconfig */; };
-		1B17E5AA2A2E590400CE2107 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B17E5A92A2E590400CE2107 /* Release.xcconfig */; };
-		1B17E5AB2A2E590400CE2107 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B17E5A92A2E590400CE2107 /* Release.xcconfig */; };
 		1B17E5AD2A2E596800CE2107 /* Version.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B17E5AC2A2E596800CE2107 /* Version.xcconfig */; };
 		1B17E5AE2A2E596800CE2107 /* Version.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B17E5AC2A2E596800CE2107 /* Version.xcconfig */; };
 		1B50D4AB29D5E8F20023F06C /* OPStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B50D4AA29D5E8F20023F06C /* OPStorageTests.swift */; };
+		1BC970372A5CD95B00FFB70E /* BuildType.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1BC970362A5CD95B00FFB70E /* BuildType.xcconfig */; };
+		1BC970382A5CD95B00FFB70E /* BuildType.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1BC970362A5CD95B00FFB70E /* BuildType.xcconfig */; };
 		D00E1049264ADB3800E708AB /* OPPaymentCardDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E1048264ADB3800E708AB /* OPPaymentCardDetailsView.swift */; };
 		D00EF3902747029E00BDA729 /* OloPayAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00EF38F2747029E00BDA729 /* OloPayAPITests.swift */; platformFilter = ios; };
+		D02262122A60A0E600001A22 /* SdkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D02262112A60A0E600001A22 /* SdkInfo.plist */; };
+		D02262132A60A0E600001A22 /* SdkInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D02262112A60A0E600001A22 /* SdkInfo.plist */; };
 		D0495AC4268E7BE200825588 /* OPCardField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0495AC3268E7BE200825588 /* OPCardField.swift */; };
 		D04B12FE28A2C1FC00A79092 /* OPEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B12FD28A2C1FC00A79092 /* OPEnvironment.swift */; };
 		D04FC02F28F894080065BF1A /* Stripe.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04FC02E28F894080065BF1A /* Stripe.xcframework */; };
@@ -39,7 +39,6 @@
 		D04FC03328F8941E0065BF1A /* StripeCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04FC03228F8941E0065BF1A /* StripeCore.xcframework */; };
 		D04FC03528F894290065BF1A /* StripeApplePay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04FC03428F894290065BF1A /* StripeApplePay.xcframework */; };
 		D04FC03728F894330065BF1A /* StripeUICore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04FC03628F894330065BF1A /* StripeUICore.xcframework */; };
-		D05B4505267A9B550074C9C9 /* OPApplePayContextInternal.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B4504267A9B550074C9C9 /* OPApplePayContextInternal.swift */; };
 		D05B450B267A9E5C0074C9C9 /* OPStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B450A267A9E5C0074C9C9 /* OPStorage.swift */; };
 		D05B450F267A9E7F0074C9C9 /* OPPublishableKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B450E267A9E7F0074C9C9 /* OPPublishableKey.swift */; };
 		D05B4513267A9EED0074C9C9 /* OPHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B4512267A9EED0074C9C9 /* OPHelpers.swift */; };
@@ -48,6 +47,7 @@
 		D05B4529267AB0090074C9C9 /* OPPaymentStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B4528267AB0090074C9C9 /* OPPaymentStatus.swift */; };
 		D05B4532267B8F6E0074C9C9 /* OPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B4531267B8F6E0074C9C9 /* OPError.swift */; };
 		D05B4537267B9A4D0074C9C9 /* OPSetupParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05B4536267B9A4D0074C9C9 /* OPSetupParameters.swift */; };
+		D061F2F62A436D6800016443 /* OPApplePayLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D061F2F52A436D6800016443 /* OPApplePayLauncher.swift */; };
 		D0677C56293AC02700ECE164 /* StripePayments.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0677C55293AC02700ECE164 /* StripePayments.xcframework */; };
 		D0677C57293AC02700ECE164 /* StripePayments.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0677C55293AC02700ECE164 /* StripePayments.xcframework */; };
 		D0677C59293AC06C00ECE164 /* StripePaymentsUI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0677C58293AC06C00ECE164 /* StripePaymentsUI.xcframework */; };
@@ -96,14 +96,14 @@
 		1B17E5952A28F96900CE2107 /* OPSdkWrapperInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPSdkWrapperInfo.swift; sourceTree = "<group>"; };
 		1B17E5972A28FDB000CE2107 /* OPSdkWrapperBuildType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPSdkWrapperBuildType.swift; sourceTree = "<group>"; };
 		1B17E5992A28FDBD00CE2107 /* OPSdkWrapperPlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPSdkWrapperPlatform.swift; sourceTree = "<group>"; };
-		1B17E5A52A2E589500CE2107 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		1B17E5A92A2E590400CE2107 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		1B17E5AC2A2E596800CE2107 /* Version.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Version.xcconfig; sourceTree = "<group>"; };
 		1B50D4AA29D5E8F20023F06C /* OPStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPStorageTests.swift; sourceTree = "<group>"; };
+		1BC970362A5CD95B00FFB70E /* BuildType.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = BuildType.xcconfig; sourceTree = "<group>"; };
 		D00E1048264ADB3800E708AB /* OPPaymentCardDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPPaymentCardDetailsView.swift; sourceTree = "<group>"; };
 		D00EF3822746D9EE00BDA729 /* OloPaySDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OloPaySDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00EF3862746D9EE00BDA729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D00EF38F2747029E00BDA729 /* OloPayAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OloPayAPITests.swift; sourceTree = "<group>"; };
+		D02262112A60A0E600001A22 /* SdkInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SdkInfo.plist; sourceTree = "<group>"; };
 		D0495AC3268E7BE200825588 /* OPCardField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPCardField.swift; sourceTree = "<group>"; };
 		D04B12FD28A2C1FC00A79092 /* OPEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPEnvironment.swift; sourceTree = "<group>"; };
 		D04FC02E28F894080065BF1A /* Stripe.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Stripe.xcframework; path = ../../Carthage/Build/Stripe.xcframework; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 		D04FC03228F8941E0065BF1A /* StripeCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeCore.xcframework; path = ../../Carthage/Build/StripeCore.xcframework; sourceTree = "<group>"; };
 		D04FC03428F894290065BF1A /* StripeApplePay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeApplePay.xcframework; path = ../../Carthage/Build/StripeApplePay.xcframework; sourceTree = "<group>"; };
 		D04FC03628F894330065BF1A /* StripeUICore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripeUICore.xcframework; path = ../../Carthage/Build/StripeUICore.xcframework; sourceTree = "<group>"; };
-		D05B4504267A9B550074C9C9 /* OPApplePayContextInternal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPApplePayContextInternal.swift; sourceTree = "<group>"; };
 		D05B450A267A9E5C0074C9C9 /* OPStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPStorage.swift; sourceTree = "<group>"; };
 		D05B450E267A9E7F0074C9C9 /* OPPublishableKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPPublishableKey.swift; sourceTree = "<group>"; };
 		D05B4512267A9EED0074C9C9 /* OPHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPHelpers.swift; sourceTree = "<group>"; };
@@ -120,6 +119,7 @@
 		D05B4528267AB0090074C9C9 /* OPPaymentStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPPaymentStatus.swift; sourceTree = "<group>"; };
 		D05B4531267B8F6E0074C9C9 /* OPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPError.swift; sourceTree = "<group>"; };
 		D05B4536267B9A4D0074C9C9 /* OPSetupParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPSetupParameters.swift; sourceTree = "<group>"; };
+		D061F2F52A436D6800016443 /* OPApplePayLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPApplePayLauncher.swift; sourceTree = "<group>"; };
 		D0677C55293AC02700ECE164 /* StripePayments.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripePayments.xcframework; path = ../../Carthage/Build/StripePayments.xcframework; sourceTree = "<group>"; };
 		D0677C58293AC06C00ECE164 /* StripePaymentsUI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = StripePaymentsUI.xcframework; path = ../../Carthage/Build/StripePaymentsUI.xcframework; sourceTree = "<group>"; };
 		D06826752654575C008CF7A0 /* OPPaymentCardDetailsInternalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OPPaymentCardDetailsInternalView.swift; sourceTree = "<group>"; };
@@ -186,13 +186,14 @@
 		065C04A3263B3DAF002D9AF0 /* OloPaySDK */ = {
 			isa = PBXGroup;
 			children = (
+				065C04A5263B3DAF002D9AF0 /* Info.plist */,
+				1BC9702A2A5C73BF00FFB70E /* Assets */,
 				D06EDCAB27175FAC00DF77B1 /* API */,
 				D05B4535267B99A10074C9C9 /* ApplePay */,
 				D0A82A7C267462B700370561 /* Internal */,
 				D08F49AE2661F83600C9B204 /* Data */,
 				D00E1047264AD34000E708AB /* Controls */,
 				065C04A4263B3DAF002D9AF0 /* OloPaySDK.h */,
-				065C04A5263B3DAF002D9AF0 /* Info.plist */,
 			);
 			path = OloPaySDK;
 			sourceTree = "<group>";
@@ -209,6 +210,16 @@
 				D04FC02E28F894080065BF1A /* Stripe.xcframework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BC9702A2A5C73BF00FFB70E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D02262112A60A0E600001A22 /* SdkInfo.plist */,
+				1B17E5AC2A2E596800CE2107 /* Version.xcconfig */,
+				1BC970362A5CD95B00FFB70E /* BuildType.xcconfig */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		D00E1047264AD34000E708AB /* Controls */ = {
@@ -241,7 +252,7 @@
 		D05B4503267A9B350074C9C9 /* ApplePay */ = {
 			isa = PBXGroup;
 			children = (
-				D05B4504267A9B550074C9C9 /* OPApplePayContextInternal.swift */,
+				D061F2F52A436D6800016443 /* OPApplePayLauncher.swift */,
 			);
 			path = ApplePay;
 			sourceTree = "<group>";
@@ -315,9 +326,6 @@
 				1B17E58B2A267C3300CE2107 /* OPMetadataGenerator.swift */,
 				1B17E58D2A26873900CE2107 /* OPPaymentMethodSource.swift */,
 				1B17E5912A26BA9700CE2107 /* OPMetadataStrings.swift */,
-				1B17E5A52A2E589500CE2107 /* Debug.xcconfig */,
-				1B17E5A92A2E590400CE2107 /* Release.xcconfig */,
-				1B17E5AC2A2E596800CE2107 /* Version.xcconfig */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -341,6 +349,7 @@
 			buildConfigurationList = 065C04B5263B3DAF002D9AF0 /* Build configuration list for PBXNativeTarget "OloPaySDK" */;
 			buildPhases = (
 				065C049C263B3DAF002D9AF0 /* Headers */,
+				D02262162A60A2DB00001A22 /* ShellScript */,
 				065C049D263B3DAF002D9AF0 /* Sources */,
 				065C049E263B3DAF002D9AF0 /* Frameworks */,
 				065C049F263B3DAF002D9AF0 /* Resources */,
@@ -414,9 +423,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B17E5AA2A2E590400CE2107 /* Release.xcconfig in Resources */,
-				1B17E5A62A2E589500CE2107 /* Debug.xcconfig in Resources */,
+				D02262122A60A0E600001A22 /* SdkInfo.plist in Resources */,
 				1B17E5AD2A2E596800CE2107 /* Version.xcconfig in Resources */,
+				1BC970372A5CD95B00FFB70E /* BuildType.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,19 +433,40 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B17E5AB2A2E590400CE2107 /* Release.xcconfig in Resources */,
-				1B17E5A72A2E589500CE2107 /* Debug.xcconfig in Resources */,
+				D02262132A60A0E600001A22 /* SdkInfo.plist in Resources */,
 				1B17E5AE2A2E596800CE2107 /* Version.xcconfig in Resources */,
+				1BC970382A5CD95B00FFB70E /* BuildType.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D02262162A60A2DB00001A22 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "infoPlist=\"$TARGET_BUILD_DIR/$INFOPLIST_PATH\"\nsdkInfo=\"$SRCROOT/OloPaySDK/Assets/SdkInfo.plist\"\n\nif [ -f ${plist} ]\nthen\n    version=`/usr/libexec/PlistBuddy -c \"Print \\\":SDK Build Version\\\"\" $infoPlist`\n    buildType=`/usr/libexec/PlistBuddy -c \"Print \\\":SDK Build Type\\\"\" $infoPlist`\n    \n    /usr/libexec/PlistBuddy -c \"Set \\\":SDK Build Version\\\" $version\" $sdkInfo\n    /usr/libexec/PlistBuddy -c \"Set \\\":SDK Build Type\\\" $buildType\" $sdkInfo\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		065C049D263B3DAF002D9AF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D061F2F62A436D6800016443 /* OPApplePayLauncher.swift in Sources */,
 				0648C09B26DFCD6D0053966D /* OPPaymentMethodParams.swift in Sources */,
 				D08AAEC126AA1F8B00A171DE /* OPPaymentCardDetailsForm.swift in Sources */,
 				D0959BED268D24AE00EC7BE0 /* OPErrorType.swift in Sources */,
@@ -460,7 +490,6 @@
 				D0495AC4268E7BE200825588 /* OPCardField.swift in Sources */,
 				D00E1049264ADB3800E708AB /* OPPaymentCardDetailsView.swift in Sources */,
 				1B17E5922A26BA9700CE2107 /* OPMetadataStrings.swift in Sources */,
-				D05B4505267A9B550074C9C9 /* OPApplePayContextInternal.swift in Sources */,
 				1B17E59A2A28FDBD00CE2107 /* OPSdkWrapperPlatform.swift in Sources */,
 				D06826762654575C008CF7A0 /* OPPaymentCardDetailsInternalView.swift in Sources */,
 				D05B4529267AB0090074C9C9 /* OPPaymentStatus.swift in Sources */,
@@ -625,7 +654,7 @@
 		};
 		065C04B6263B3DAF002D9AF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B17E5A52A2E589500CE2107 /* Debug.xcconfig */;
+			baseConfigurationReference = 1BC970362A5CD95B00FFB70E /* BuildType.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -657,7 +686,7 @@
 		};
 		065C04B7263B3DAF002D9AF0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B17E5A92A2E590400CE2107 /* Release.xcconfig */;
+			baseConfigurationReference = 1BC970362A5CD95B00FFB70E /* BuildType.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -688,7 +717,7 @@
 		};
 		D00EF38A2746D9EE00BDA729 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B17E5A52A2E589500CE2107 /* Debug.xcconfig */;
+			baseConfigurationReference = 1BC970362A5CD95B00FFB70E /* BuildType.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5247FXNRAV;
@@ -709,7 +738,7 @@
 		};
 		D00EF38C2746D9EE00BDA729 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B17E5A92A2E590400CE2107 /* Release.xcconfig */;
+			baseConfigurationReference = 1BC970362A5CD95B00FFB70E /* BuildType.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5247FXNRAV;
