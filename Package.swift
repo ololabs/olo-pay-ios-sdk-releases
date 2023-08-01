@@ -24,6 +24,13 @@ let package = Package(
                 .product(name: "Stripe", package: "stripe-ios")
             ],
             path: "src/OloPaySDK/OloPaySDK"
+        ),
+        .testTarget(
+            name: "OloPaySDKTests",
+            dependencies: [
+                .byName(name: "OloPaySDK")
+            ],
+            path: "src/OloPaySDK/OloPaySDKTests"
         )
     ]
 )
