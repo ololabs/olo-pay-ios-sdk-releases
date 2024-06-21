@@ -1,0 +1,12 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/Data/OPSetupParameters.swift",
+      "line": 27,
+      "symbol": "OPSetupParameters.environment",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk"
+}
