@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OPApplePayConfiguration Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/OPApplePayConfiguration" class="dashAnchor"></a>
+    <a title="OPApplePayConfiguration Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Olo Pay SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">OloPaySDK</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        OPApplePayConfiguration Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../setup---carthage.html">Setup - Carthage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../setup---cocoapods.html">Setup - CocoaPods</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../setup---manual.html">Setup - Manual</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../setup---spm.html">Setup - SPM</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/OPApplePayConfiguration.html">OPApplePayConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPApplePayLauncher.html">OPApplePayLauncher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPError.html">OPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPPaymentCardCvvView.html">OPPaymentCardCvvView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPPaymentCardDetailsForm.html">OPPaymentCardDetailsForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPPaymentCardDetailsView.html">OPPaymentCardDetailsView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPStrings.html">OPStrings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OloPayAPI.html">OloPayAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OloPayApiInitializer.html">OloPayApiInitializer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/OPApplePayLauncherError.html">OPApplePayLauncherError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPApplePayStatus.html">OPApplePayStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardBrand.html">OPCardBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardErrorType.html">OPCardErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardField.html">OPCardField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardFormStyle.html">OPCardFormStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCurrencyCode.html">OPCurrencyCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPEnvironment.html">OPEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPErrorType.html">OPErrorType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/OPAddressProtocol.html">OPAddressProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPApplePayLauncherDelegate.html">OPApplePayLauncherDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPApplePayLauncherProtocol.html">OPApplePayLauncherProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPCardFieldStateProtocol.html">OPCardFieldStateProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@OloPaySDK@objc(pl)OPCvvTokenParamsProtocol">OPCvvTokenParamsProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPCvvUpdateTokenProtocol.html">OPCvvUpdateTokenProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentCardCvvViewDelegate.html">OPPaymentCardCvvViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentCardDetailsFormDelegate.html">OPPaymentCardDetailsFormDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentCardDetailsViewDelegate.html">OPPaymentCardDetailsViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@OloPaySDK@objc(pl)OPPaymentMethodParamsProtocol">OPPaymentMethodParamsProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentMethodProtocol.html">OPPaymentMethodProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OloPayAPIProtocol.html">OloPayAPIProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OloPayApiInitializerProtocol.html">OloPayApiInitializerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK07OPAppleB15CompletionBlocka">OPApplePayCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK21OPCardBrandImageBlocka">OPCardBrandImageBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK23OPCardErrorMessageBlocka">OPCardErrorMessageBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK22OPCvvErrorMessageBlocka">OPCvvErrorMessageBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK31OPCvvTokenUpdateCompletionBlocka">OPCvvTokenUpdateCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK30OPPaymentMethodCompletionBlocka">OPPaymentMethodCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK11OPVoidBlocka">OPVoidBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>OPApplePayConfiguration</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">OPApplePayConfiguration</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Configuration paramaters required for setting up ApplePay</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9OloPaySDK07OPAppleB13ConfigurationC10merchantIdSSvp"></a>
+                    <a name="//apple_ref/swift/Property/merchantId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9OloPaySDK07OPAppleB13ConfigurationC10merchantIdSSvp">merchantId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The merchant ID registered with Apple</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">merchantId</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9OloPaySDK07OPAppleB13ConfigurationC12companyLabelSSvp"></a>
+                    <a name="//apple_ref/swift/Property/companyLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9OloPaySDK07OPAppleB13ConfigurationC12companyLabelSSvp">companyLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The company label that will be displayed on the ApplePay payment sheet</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">companyLabel</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9OloPaySDK07OPAppleB13ConfigurationC12currencyCodeAA010OPCurrencyG0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/currencyCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9OloPaySDK07OPAppleB13ConfigurationC12currencyCodeAA010OPCurrencyG0Ovp">currencyCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The currency code to use for Apple Pay transactions
+Default value is <code><a href="../Enums/OPCurrencyCode.html#/c:@M@OloPaySDK@E@OPCurrencyCode@OPCurrencyCodeUsd">OPCurrencyCode.usd</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">currencyCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/OPCurrencyCode.html">OPCurrencyCode</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9OloPaySDK07OPAppleB13ConfigurationC11countryCodeSSvp"></a>
+                    <a name="//apple_ref/swift/Property/countryCode" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9OloPaySDK07OPAppleB13ConfigurationC11countryCodeSSvp">countryCode</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A two-character country code for the vendor that will be processing transactions
+Default value is <code>US</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">countryCode</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9OloPaySDK07OPAppleB13ConfigurationC26fullBillingAddressRequiredSbvp"></a>
+                    <a name="//apple_ref/swift/Property/fullBillingAddressRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9OloPaySDK07OPAppleB13ConfigurationC26fullBillingAddressRequiredSbvp">fullBillingAddressRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether Apple Pay collects and returns a full billing address when processing transactions
+If <code>false</code>, only postal code and country code will be provided. Default value is <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fullBillingAddressRequired</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9OloPaySDK07OPAppleB13ConfigurationC19phoneNumberRequiredSbvp"></a>
+                    <a name="//apple_ref/swift/Property/phoneNumberRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9OloPaySDK07OPAppleB13ConfigurationC19phoneNumberRequiredSbvp">phoneNumberRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether Apple Pay collects and returns a phone number when processing transactions
+Default value is <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">phoneNumberRequired</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9OloPaySDK07OPAppleB13ConfigurationC16fullNameRequiredSbvp"></a>
+                    <a name="//apple_ref/swift/Property/fullNameRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9OloPaySDK07OPAppleB13ConfigurationC16fullNameRequiredSbvp">fullNameRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether Apple Pay collects and returns a name when processing transactions
+Default value is <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">fullNameRequired</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9OloPaySDK07OPAppleB13ConfigurationC13emailRequiredSbvp"></a>
+                    <a name="//apple_ref/swift/Property/emailRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9OloPaySDK07OPAppleB13ConfigurationC13emailRequiredSbvp">emailRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether Apple Pay collects and returns an email address when processing transactions
+Default value is <code>false</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">emailRequired</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayConfiguration(im)initWithMerchantId:companyLabel:currencyCode:countryCode:emailRequired:phoneNumberRequired:fullNameRequired:fullBillingAddressRequired:"></a>
+                    <a name="//apple_ref/swift/Method/init(merchantId:companyLabel:currencyCode:countryCode:emailRequired:phoneNumberRequired:fullNameRequired:fullBillingAddressRequired:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayConfiguration(im)initWithMerchantId:companyLabel:currencyCode:countryCode:emailRequired:phoneNumberRequired:fullNameRequired:fullBillingAddressRequired:">init(merchantId:<wbr>companyLabel:<wbr>currencyCode:<wbr>countryCode:<wbr>emailRequired:<wbr>phoneNumberRequired:<wbr>fullNameRequired:<wbr>fullBillingAddressRequired:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">merchantId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">companyLabel</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span>
+    <span class="nv">currencyCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/OPCurrencyCode.html">OPCurrencyCode</a></span> <span class="o">=</span> <span class="o">.</span><span class="n">usd</span><span class="p">,</span>
+    <span class="nv">countryCode</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"US"</span><span class="p">,</span>
+    <span class="nv">emailRequired</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">phoneNumberRequired</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">fullNameRequired</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="nv">fullBillingAddressRequired</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="https://github.com/ololabs/olo-pay-ios-sdk-releases" target="_blank" rel="external noopener">Olo, Inc.</a>. All rights reserved. (Last updated: 2025-03-07)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
