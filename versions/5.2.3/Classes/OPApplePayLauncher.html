@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OPApplePayLauncher Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/OPApplePayLauncher" class="dashAnchor"></a>
+    <a title="OPApplePayLauncher Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Olo Pay SDK</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">OloPaySDK</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        <a href="../Classes.html">Classes</a>
+        <img id="carat" src="../img/carat.png" alt=""/>
+        OPApplePayLauncher Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Guides.html">Guides</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../setup---carthage.html">Setup - Carthage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../setup---cocoapods.html">Setup - CocoaPods</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../setup---manual.html">Setup - Manual</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../setup---spm.html">Setup - SPM</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/OPApplePayButton.html">OPApplePayButton</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPApplePayConfiguration.html">OPApplePayConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPApplePayLauncher.html">OPApplePayLauncher</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPError.html">OPError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPPaymentCardCvvView.html">OPPaymentCardCvvView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPPaymentCardDetailsForm.html">OPPaymentCardDetailsForm</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPPaymentCardDetailsView.html">OPPaymentCardDetailsView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OPStrings.html">OPStrings</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OloPayAPI.html">OloPayAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/OloPayApiInitializer.html">OloPayApiInitializer</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/OPApplePayLauncherError.html">OPApplePayLauncherError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPApplePayStatus.html">OPApplePayStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardBrand.html">OPCardBrand</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardErrorType.html">OPCardErrorType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardField.html">OPCardField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCardFormStyle.html">OPCardFormStyle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPCurrencyCode.html">OPCurrencyCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPEnvironment.html">OPEnvironment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/OPErrorType.html">OPErrorType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/OPAddressProtocol.html">OPAddressProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPApplePayLauncherDelegate.html">OPApplePayLauncherDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPApplePayLauncherProtocol.html">OPApplePayLauncherProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPCardFieldStateProtocol.html">OPCardFieldStateProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@OloPaySDK@objc(pl)OPCvvTokenParamsProtocol">OPCvvTokenParamsProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPCvvUpdateTokenProtocol.html">OPCvvUpdateTokenProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentCardCvvViewDelegate.html">OPPaymentCardCvvViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentCardDetailsFormDelegate.html">OPPaymentCardDetailsFormDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentCardDetailsViewDelegate.html">OPPaymentCardDetailsViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/c:@M@OloPaySDK@objc(pl)OPPaymentMethodParamsProtocol">OPPaymentMethodParamsProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OPPaymentMethodProtocol.html">OPPaymentMethodProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OloPayAPIProtocol.html">OloPayAPIProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/OloPayApiInitializerProtocol.html">OloPayApiInitializerProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK07OPAppleB15CompletionBlocka">OPApplePayCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK21OPCardBrandImageBlocka">OPCardBrandImageBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK23OPCardErrorMessageBlocka">OPCardErrorMessageBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK22OPCvvErrorMessageBlocka">OPCvvErrorMessageBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK31OPCvvTokenUpdateCompletionBlocka">OPCvvTokenUpdateCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK30OPPaymentMethodCompletionBlocka">OPPaymentMethodCompletionBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:9OloPaySDK11OPVoidBlocka">OPVoidBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>OPApplePayLauncher</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">@available</span><span class="p">(</span><span class="n">iOSApplicationExtension</span><span class="p">,</span> <span class="n">unavailable</span><span class="p">)</span>
+<span class="kd">@available</span><span class="p">(</span><span class="n">macCatalystApplicationExtension</span><span class="p">,</span> <span class="n">unavailable</span><span class="p">)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="kt">OPApplePayLauncher</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">PKPaymentAuthorizationControllerDelegate</span><span class="p">,</span> <span class="kt"><a href="../Protocols/OPApplePayLauncherProtocol.html">OPApplePayLauncherProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>A helper class that implements and simplifies ApplePay.</p>
+
+<p>Use of this class looks like this:</p>
+
+<ol>
+<li>Create an instance of this class</li>
+<li>Create instances of <code><a href="../Classes/OPApplePayConfiguration.html">OPApplePayConfiguration</a></code> and <code><a href="../Protocols/OPApplePayLauncherDelegate.html">OPApplePayLauncherDelegate</a></code> and update the <code>configuration</code> and <code>delegate</code> properties of this class</li>
+<li>Create a button for ApplePay and connect it to a click handler</li>
+<li>Enable/Disable or Hide/Show the ApplePay button by calling <code><a href="../Classes/OPApplePayLauncher.html#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(cm)canMakePayments">OPApplePayLauncher.canMakePayments()</a></code></li>
+<li>In the click handler, call <code>OPApplePayLauncher.present()</code> to present the Apple Pay sheet and begin the payment process</li>
+<li>Implement <code><a href="../Protocols/OPApplePayLauncherDelegate.html#/c:@M@OloPaySDK@objc(pl)OPApplePayLauncherDelegate(im)paymentMethodCreatedFrom:with:">OPApplePayLauncherDelegate.paymentMethodCreated(...)</a></code> to submit the basket to Olo&rsquo;s Ordering API</li>
+<li>Optionally implement <code><a href="../Protocols/OPApplePayLauncherDelegate.html#/c:@M@OloPaySDK@objc(pl)OPApplePayLauncherDelegate(im)applePayDismissedFrom:with:error:">OPApplePayLauncherDelegate.applePayDismissed(...)</a></code> to handle success and error states when the ApplePay sheet is dimissed</li>
+</ol>
+<div class="aside aside-warning">
+    <p class="aside-title">Warning</p>
+    OPApplePayLauncher needs to be created as a class member variable rather than a variable with function scope or else it can become
+       <code>nil</code> while the ApplePay sheet is presented and callback methods won&rsquo;t get called
+
+</div>
+
+<p><strong>Example Implementation</strong></p>
+<pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UIViewController</span><span class="p">,</span> <span class="kt">OPApplePayLauncherDelegate</span> <span class="p">{</span>
+    <span class="c1">// This needs to be a class member variable or it can go out of</span>
+    <span class="c1">// scope during the ApplePay flow and become nil, preventing callbacks</span>
+    <span class="c1">// from executing</span>
+    <span class="k">var</span> <span class="nv">_applePayLauncher</span><span class="p">:</span> <span class="kt">OPApplePayLauncherProtocol</span>
+
+    <span class="kd">required</span> <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
+        <span class="n">_applePayLauncher</span> <span class="o">=</span> <span class="kt">OPApplePayLauncher</span><span class="p">()</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">init</span><span class="p">()</span>
+
+        <span class="n">_applePayLauncher</span><span class="o">.</span><span class="n">delegate</span> <span class="o">=</span> <span class="k">self</span>
+        <span class="n">_applePayLauncher</span><span class="o">.</span><span class="n">configuration</span> <span class="o">=</span> <span class="kt">OPApplePayConfiguration</span><span class="p">(</span>
+            <span class="nv">merchantId</span><span class="p">:</span> <span class="s">"merchant.com.your.applepay.id"</span><span class="p">,</span>
+            <span class="nv">companyLabel</span><span class="p">:</span> <span class="s">"Your Company Name"</span>
+        <span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Called when user taps on ApplePay button to begin ApplePay flow</span>
+    <span class="kd">func</span> <span class="nf">submitApplePay</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// To allow mocking this check, it could instead be called like this:</span>
+        <span class="c1">// type(of: _applePayLauncher).canMakePayments()</span>
+        <span class="k">guard</span> <span class="kt">OPApplePayLauncher</span><span class="o">.</span><span class="nf">canMakePayments</span><span class="p">()</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="k">return</span>
+        <span class="p">}</span>
+
+        <span class="k">do</span> <span class="p">{</span>
+            <span class="k">let</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">NSDecimalNumber</span> <span class="o">=</span> <span class="mf">1.23</span>
+            <span class="k">try</span> <span class="n">_applePayLauncher</span><span class="p">?</span><span class="o">.</span><span class="nf">present</span><span class="p">(</span><span class="nv">for</span><span class="p">:</span> <span class="n">amount</span><span class="p">)</span> <span class="p">{</span>
+                <span class="c1">// Optional logic for when the ApplePay flow is displayed</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">catch</span> <span class="p">{</span>
+            <span class="c1">// Handle error conditions. See docs for `OPApplePayLauncher.present()` for more information</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">paymentMethodCreated</span><span class="p">(</span><span class="n">from</span> <span class="nv">launcher</span><span class="p">:</span> <span class="kt">OPApplePayLauncherProtocol</span><span class="p">,</span> <span class="n">with</span> <span class="nv">paymentMethod</span><span class="p">:</span> <span class="kt">OPPaymentMethod</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">NSError</span><span class="p">?</span> <span class="p">{</span>
+        <span class="c1">// Use the payment method to submit the basket to Olo's Ordering API (the basket id can be retrieved with `launcher.basketId`</span>
+        <span class="c1">// If the API returns an error, return that error. If the API call is successful, return nil</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">applePayDismissed</span><span class="p">(</span><span class="n">from</span> <span class="nv">launcher</span><span class="p">:</span> <span class="kt">OPApplePayLauncherProtocol</span><span class="p">,</span> <span class="n">with</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">OPPaymentStatus</span><span class="p">,</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span> <span class="p">{</span>
+        <span class="c1">// This is called after the payment sheet has been dismissed</span>
+        <span class="c1">// Use the status and error parameters to determine if payment was successful</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(cm)canMakePayments"></a>
+                    <a name="//apple_ref/swift/Method/canMakePayments()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(cm)canMakePayments">canMakePayments()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Whether or not this device can make Apple Pay payments via a  supported card network
+Supported ApplePay card networks are: American Express, Visa, Mastercard, Discover</p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>While this should be used in determining if an Apple Pay button can be displayed, it should not be the <strong><em>only</em></strong> determining factor. It is also
+         important to determine whether a restaurant/vendor supports Apple Pay as a payment method, which can be determined using the Olo Ordering API.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">canMakePayments</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>true</code> if the device is currently able to make Apple Pay payments via one
+of the supported networks, or <code>false</code> if not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)initWithConfiguration:delegate:"></a>
+                    <a name="//apple_ref/swift/Method/init(configuration:delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)initWithConfiguration:delegate:">init(configuration:<wbr>delegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initializes this class.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span>
+    <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/OPApplePayConfiguration.html">OPApplePayConfiguration</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span>
+    <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OPApplePayLauncherDelegate.html">OPApplePayLauncherDelegate</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>configuration</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Configuration parameters for Apple Pay</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The delegate.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An <code>OPApplePayLauncher</code> instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(py)basketId"></a>
+                    <a name="//apple_ref/swift/Property/basketId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(py)basketId">basketId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Basket ID convenience property for being able to submit a basket in <code><a href="../Protocols/OPApplePayLauncherDelegate.html#/c:@M@OloPaySDK@objc(pl)OPApplePayLauncherDelegate(im)paymentMethodCreatedFrom:with:">OPApplePayLauncherDelegate.paymentMethodCreated(...)</a></code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">basketId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(py)configuration"></a>
+                    <a name="//apple_ref/swift/Property/configuration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(py)configuration">configuration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configuration parameters for processing Apple Pay payments</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">configuration</span><span class="p">:</span> <span class="kt"><a href="../Classes/OPApplePayConfiguration.html">OPApplePayConfiguration</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(py)delegate"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(py)delegate">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delegate to handle callbacks during the Apple Pay flow</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/OPApplePayLauncherDelegate.html">OPApplePayLauncherDelegate</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)presentFor:error:completion:"></a>
+                    <a name="//apple_ref/swift/Method/present(for:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)presentFor:error:completion:">present(for:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents the Apple Pay sheet</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorConfigurationNotSet">OPApplePayLauncherError.configurationNotSet</a></code>, <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorDelegateNotSet">OPApplePayLauncherError.delegateNotSet</a></code>,
+      <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorEmptyMerchantId">OPApplePayLauncherError.emptyMerchantId</a></code>, <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorEmptyCompanyLabel">OPApplePayLauncherError.emptyCompanyLabel</a></code>,
+      <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorInvalidCountryCode">OPApplePayLauncherError.invalidCountryCode</a></code>, <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorApplePayNotSupported">OPApplePayLauncherError.applePayNotSupported</a></code>,
+      <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorLineItemTotalMismatchError">OPApplePayLauncherError.lineItemTotalMismatchError</a></code></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">present</span><span class="p">(</span><span class="k">for</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">NSDecimalNumber</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9OloPaySDK11OPVoidBlocka">OPVoidBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>for</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount to be displayed on the Apple Pay sheet</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called after the Apple Pay sheet is visible to the user</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)presentFor:with:validateLineItems:error:completion:"></a>
+                    <a name="//apple_ref/swift/Method/present(for:with:validateLineItems:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)presentFor:with:validateLineItems:error:completion:">present(for:<wbr>with:<wbr>validateLineItems:<wbr>completion:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presents the Apple Pay sheet</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    <p><code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorConfigurationNotSet">OPApplePayLauncherError.configurationNotSet</a></code>, <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorDelegateNotSet">OPApplePayLauncherError.delegateNotSet</a></code>,
+      <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorEmptyMerchantId">OPApplePayLauncherError.emptyMerchantId</a></code>, <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorEmptyCompanyLabel">OPApplePayLauncherError.emptyCompanyLabel</a></code>,
+      <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorInvalidCountryCode">OPApplePayLauncherError.invalidCountryCode</a></code>, <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorApplePayNotSupported">OPApplePayLauncherError.applePayNotSupported</a></code>,
+      <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorLineItemTotalMismatchError">OPApplePayLauncherError.lineItemTotalMismatchError</a></code></p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">present</span><span class="p">(</span>
+    <span class="k">for</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">NSDecimalNumber</span><span class="p">,</span>
+    <span class="n">with</span> <span class="nv">lineItems</span><span class="p">:</span> <span class="p">[</span><span class="kt">PKPaymentSummaryItem</span><span class="p">]?,</span>
+    <span class="nv">validateLineItems</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="nv">completion</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:9OloPaySDK11OPVoidBlocka">OPVoidBlock</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+<span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>for</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The amount to be displayed on the Apple Pay sheet</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>with</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A list of line items to be displayed in the Apple Pay sheet. If line items are not needed, this property can be nil or an empty array</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>validateLineItems</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>If <code>true</code>, throws <code><a href="../Enums/OPApplePayLauncherError.html#/c:@M@OloPaySDK@E@OPApplePayLauncherError@OPApplePayLauncherErrorLineItemTotalMismatchError">OPApplePayLauncherError.lineItemTotalMismatchError</a></code>
+               if the sum of the line items does not equal the total amount passed in. 
+               Default is <code>true</code></p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Called after the Apple Pay sheet is visible to the user</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)paymentAuthorizationController:didAuthorizePayment:handler:"></a>
+                    <a name="//apple_ref/swift/Method/paymentAuthorizationController(_:didAuthorizePayment:handler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)paymentAuthorizationController:didAuthorizePayment:handler:">paymentAuthorizationController(_:<wbr>didAuthorizePayment:<wbr>handler:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">paymentAuthorizationController</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">controller</span><span class="p">:</span> <span class="kt">PKPaymentAuthorizationController</span><span class="p">,</span>
+    <span class="n">didAuthorizePayment</span> <span class="nv">payment</span><span class="p">:</span> <span class="kt">PKPayment</span><span class="p">,</span>
+    <span class="n">handler</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">PKPaymentAuthorizationResult</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span>
+<span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)paymentAuthorizationControllerDidFinish:"></a>
+                    <a name="//apple_ref/swift/Method/paymentAuthorizationControllerDidFinish(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)paymentAuthorizationControllerDidFinish:">paymentAuthorizationControllerDidFinish(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@MainActor</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">paymentAuthorizationControllerDidFinish</span><span class="p">(</span><span class="n">_</span> <span class="nv">controller</span><span class="p">:</span> <span class="kt">PKPaymentAuthorizationController</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)presentationWindowForPaymentAuthorizationController:"></a>
+                    <a name="//apple_ref/swift/Method/presentationWindow(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@OloPaySDK@objc(cs)OPApplePayLauncher(im)presentationWindowForPaymentAuthorizationController:">presentationWindow(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">presentationWindow</span><span class="p">(</span><span class="k">for</span> <span class="nv">controller</span><span class="p">:</span> <span class="kt">PKPaymentAuthorizationController</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIWindow</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2025 <a class="link" href="https://github.com/ololabs/olo-pay-ios-sdk-releases" target="_blank" rel="external noopener">Olo, Inc.</a>. All rights reserved. (Last updated: 2025-10-01)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</html>
