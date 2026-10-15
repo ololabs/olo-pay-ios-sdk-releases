@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.olo.OloPaySDKTestHarness</key>
+		<string>05644f28-d041-464e-9aca-4875ef2716fa</string>
+	</dict>
+	<key>method</key>
+	<string>ad-hoc</string>
+	<key>destination</key>
+	<string>export</string>
+</dict>
+</plist>
