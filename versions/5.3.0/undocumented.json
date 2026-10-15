@@ -1,0 +1,33 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/ApplePay/OPApplePayConfiguration.swift",
+      "line": 51,
+      "symbol": "OPApplePayConfiguration.init(merchantId:companyLabel:currencyCode:countryCode:emailRequired:phoneNumberRequired:fullNameRequired:fullBillingAddressRequired:fullPhoneticNameRequired:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/ApplePay/OPApplePayLauncher.swift",
+      "line": 291,
+      "symbol": "OPApplePayLauncher.paymentAuthorizationController(_:didAuthorizePayment:handler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/ApplePay/OPApplePayLauncher.swift",
+      "line": 344,
+      "symbol": "OPApplePayLauncher.paymentAuthorizationControllerDidFinish(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk/src/OloPaySDK/OloPaySDK/ApplePay/OPApplePayLauncher.swift",
+      "line": 360,
+      "symbol": "OPApplePayLauncher.presentationWindow(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/olo-pay-ios-sdk/olo-pay-ios-sdk"
+}
